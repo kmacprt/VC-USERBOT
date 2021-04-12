@@ -1,28 +1,22 @@
 # Telegram Voice Chat UserBot
 
-A Telegram UserBot to Play Audio in Voice Chats.
+A Telegram UserBot to Play music 🎶 in Voice Chats.
 
-This is also the source code of the userbot which is being used for playing DJ/Live Sets music in [VC DJ/Live Sets](https://t.me/VCSets) group.
-
-Made with [tgcalls](https://github.com/MarshalX/tgcalls) and [Pyrogram Smart Plugin](https://docs.pyrogram.org/topics/smart-plugins)
 
 It's recommended to use [tgmusicbot](https://github.com/callsmusic/tgmusicbot) along with this userbot.
 
-## Deploy to Heroku
+<b> Deploy to Heroku </b>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/callsmusic/tgvc-userbot/tree/dev)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MR-SHRLCK/VC-USERBOT)
 
-- Generate Pyrogram session string by running [generate-pyrogram-session-string.py](generate-pyrogram-session-string.py) by yourself or through [Replit](https://replit.com/@dashezup/generate-pyrogram-session-string)
+- Generate Pyrogram session string by running by yourself or through [Here](https://replit.com/@AlvinB1/generate-pyrogram-session-string)
 - Enable the worker after deploy the project to Heroku
-- send `!ping`, `!uptime`, or `!sysinfo` from userbot account itself or its contacts to check if the userbot is running
-- Send `!join` to a voice chat enabled group chat from userbot account itself or its contacts
-- Reply to an audio with `/play` to start playing it in the voice chat, every member of the group
-  can use the `!play` and other common commands now, check `!help` for more commands
+- send `!ping`, `!uptime`, or `!sysinfo` from userbot account itself or its contacts to check if the userbot is running or not.
+- Send `!join` to a voice chat enabled group chat from userbot account itself or its contacts.
+- Reply to an audio with `/play` to start playing it in the voice chat, every member of the group.
+  can use the `!play` and other common commands now, check `!help` for more commands.
 
-Change the value of `PLUGIN` variable if you want to try other voice chat plugins.
-
-## Introduction
-
+ 
 **Features**
 
 - Playlist, queue
@@ -107,7 +101,7 @@ Create a `config.ini` file
 ```
 [pyrogram]
 api_id = 1234567
-api_hash = 0123456789abcdef0123456789abcdef
+api_hash = 0123456789abcdef0123456789abcdefd
 
 [plugins]
 root = plugins
@@ -117,37 +111,3 @@ include =
     sysinfo
 ```
 
-### Method 2: write your own userbot.py
-
-Replace the file content of `userbot.py`
-
-```
-from pyrogram import Client, idle
-
-api_id = 1234567
-api_hash = "0123456789abcdef0123456789abcdef"
-
-plugins = dict(
-    root="plugins",
-    include=[
-        "vc.player",
-        "ping"
-    ]
-)
-
-app = Client("tgvc", api_id, api_hash, plugins=plugins)
-app.start()
-print('>>> USERBOT STARTED')
-idle()
-app.stop()
-print('\n>>> USERBOT STOPPED')
-```
-
-## Notes
-
-- Read module docstrings of [plugins/](plugins) you are going to use at
-  the beginning of the file for extra notes
-
-# License
-
-AGPL-3.0-or-later
