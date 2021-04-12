@@ -94,20 +94,3 @@ Choose one of the two methods and run the userbot with
 assume that you were going to use `vc.player` and `ping` plugin, replace
 `api_id`, `api_hash` to your own value.
 
-### Method 1: use config.ini
-
-Create a `config.ini` file
-
-```
-[pyrogram]
-api_id = 1234567
-api_hash = 0123456789abcdef0123456789abcdefd
-
-[plugins]
-root = plugins
-include =
-    vc.player
-    ping
-    sysinfo
-```
-
