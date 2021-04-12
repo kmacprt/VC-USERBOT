@@ -33,7 +33,7 @@ __starts with / (slash) or ! (exclamation mark)__
 
 /play  reply with an audio to play/queue it, or show playlist
 /current  show current playing time of current track
-/repo  show git repository of the userbot
+/repo  show github repository of the userbot
 `!help`  show help for commands
 
 
@@ -56,8 +56,7 @@ __starts with ! (exclamation mark)__
 
 USERBOT_REPO = f"""{emoji.ROBOT} **Telegram Voice Chat UserBot**
 
-- Repository: [GitHub](https://github.com/callsmusic/tgvc-userbot)
-- License: AGPL-3.0-or-later"""
+Click [here](https://github.com/Mr-SHRLCK/VC-USERBOT) to open voice-chat Userbot repo"""
 
 
 # - Pyrogram filters
