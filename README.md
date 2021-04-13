@@ -3,7 +3,8 @@
 A Telegram UserBot to Play music 🎶 in Voice Chats.
 
 
-It's recommended to use [tgmusicbot](https://github.com/callsmusic/tgmusicbot) along with this userbot.
+It's recommended to use an USA number.(if your real number is suspended I'm not responsible.use at your own risks) no grauanty no waranty
+Use at your own risks..
 
 <b> Deploy to Heroku </b>
 
