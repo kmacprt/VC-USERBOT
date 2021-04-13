@@ -2,7 +2,7 @@
   "name": "Voice Chat Music UserBot (tgvc-userbot)",
   "description": "Telegram UserBot to Play Audio in Telegram Voice Chats",
   "repository": "https://github.com/Mr-SHRLCK/VC-USERBOT",
-  "logo": "https://i.imgur.com/I1jB4i5.jpg",
+  "logo": "https://telegra.ph/file/3d44aa6ce989439c9452c.jpg",
   "keywords": [
     "tgvc-userbot",
     "telegram",
@@ -25,7 +25,7 @@
             "required": true
     },
     "SESSION_NAME": {
-            "description": "Session string, read the README to learn how to export it with Pyrogram",
+            "description": "Session string, read the README",
             "required": true
     },
     "PLUGIN": {
